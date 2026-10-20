@@ -1,0 +1,407 @@
+
+
+```{r setup, include=FALSE}
+# R as Calculator
+log(10)
+
+```
+
+
+```{r setup, include=FALSE}
+log10(10)
+```
+
+
+```{r setup, include=FALSE}
+rm(list = ls())
+```
+
+
+```{r setup, include=FALSE}
+sqrt(100)
+```
+
+
+```{r setup, include=FALSE}
+abs(-13)
+```
+
+
+```{r setup, include=FALSE}
+a = 10 
+```
+
+
+```{r setup, include=FALSE}
+print(a)
+```
+
+
+```{r setup, include=FALSE}
+cat("The value of a is = ", a)
+```
+
+
+```{r setup, include=FALSE}
+result = TRUE
+```
+
+
+```{r setup, include=FALSE}
+avg = 3.9
+```
+
+
+```{r setup, include=FALSE}
+avg
+```
+
+
+```{r setup, include=FALSE}
+Course = "Btech"
+```
+class() is a function which specifies the type of R objects
+
+```{r setup, include=FALSE}
+class(result)
+```
+is,integer() is used to check whether a variable is of integer type or not
+
+```{r setup, include=FALSE}
+is.integer(a)
+
+```
+
+
+```{r setup, include=FALSE}
+a = as.integer(a)
+```
+
+
+```{r setup, include=FALSE}
+a
+
+```
+
+
+```{r setup, include=FALSE}
+class(a)
+```
+
+
+```{r setup, include=FALSE}
+p = 5-3i
+```
+
+
+```{r setup, include=FALSE}
+class(p)
+```
+
+
+```{r setup, include=FALSE}
+sqrt(-4)
+```
+
+
+```{r setup, include=FALSE}
+sqrt(as.complex(-4))
+```
+
+
+```{r setup, include=FALSE}
+c = 20
+```
+
+
+```{r setup, include=FALSE}
+c = c(1,2,3,4,5)
+```
+
+
+```{r setup, include=FALSE}
+V1 = c("Durga ", "Sharma")
+```
+
+
+```{r setup, include=FALSE}
+names(V1) = c("First name", "Last name")
+```
+
+
+```{r setup, include=FALSE}
+x = V1["First name"]
+
+```
+
+Named Vector member
+```{r setup, include=FALSE}
+V1["Last name"]
+```
+
+
+```{r setup, include=FALSE}
+V1 = c("Barack", "Obama" )
+```
+
+
+```{r setup, include=FALSE}
+V2 = c("First name", "Last name")
+```
+
+
+```{r setup, include=FALSE}
+names(V1) = V2
+```
+
+
+```{r setup, include=FALSE}
+V1
+```
+
+
+```{r setup, include=FALSE}
+V1 
+```
+
+
+```{r setup, include=FALSE}
+message = c("Hello", "World", "I", "am", "good")
+```
+
+
+```{r setup, include=FALSE}
+print(message)
+```
+
+
+```{r setup, include=FALSE}
+paste(message, collapse = "@@@@")
+
+```
+
+
+```{r setup, include=FALSE}
+paste(letters[1:3], 1:3, sep ="#", collapse= "$$$")
+```
+
+
+```{r setup, include=FALSE}
+paste("student",1:10, sep = "_")
+```
+
+
+```{r setup, include=FALSE}
+V1 = c(10,20,30,40,23)
+```
+
+
+```{r setup, include=FALSE}
+V1<25
+```
+
+
+```{r setup, include=FALSE}
+V1<45 & V1>25
+```
+
+
+```{r setup, include=FALSE}
+v1 = c(1,3,5,7,9)
+```
+
+
+```{r setup, include=FALSE}
+v2 = c(16,7,8,9,10)
+```
+
+
+```{r setup, include=FALSE}
+v1[1]<10 && v2[1]<10
+```
+
+
+```{r setup, include=FALSE}
+q1 = (1:10)
+```
+
+
+```{r setup, include=FALSE}
+15 %in% q1
+```
+
+
+```{r setup, include=FALSE}
+q2 = q1 %*% t(q1)
+```
+
+
+```{r setup, include=FALSE}
+print(q2)
+```
+
+
+```{r setup, include=FALSE}
+v1 = vector("character", length = 4)
+```
+
+
+```{r setup, include=FALSE}
+print(v1)
+```
+
+
+```{r setup, include=FALSE}
+unique(q1)
+```
+
+
+```{r setup, include=FALSE}
+round(1.2343234, 2)
+```
+
+
+```{r setup, include=FALSE}
+v = c(1,2,3,1,1)
+```
+
+
+```{r setup, include=FALSE}
+which(v==1)
+```
+
+
+```{r setup, include=FALSE}
+which.max(v)
+```
+
+
+```{r setup, include=FALSE}
+which.min(v)
+```
+
+
+```{r setup, include=FALSE}
+BOD
+```
+
+
+```{r setup, include=FALSE}
+which( BOD$demand>15)
+```
+
+
+```{r setup, include=FALSE}
+data()
+```
+
+
+```{r setup, include=FALSE}
+data(package = .packages(all.available = TRUE))
+```
+
+Create a list
+```{r setup, include=FALSE}
+L = list(1,2,3, "Aaa", "Hello", c(1,2,3,4,5,6))
+```
+
+
+```{r setup, include=FALSE}
+print(L)
+```
+
+
+```{r setup, include=FALSE}
+L = list(1,20,T)
+```
+
+
+```{r setup, include=FALSE}
+print(L)
+```
+
+
+```{r setup, include=FALSE}
+names(L) = c("ID","Age", "Can Vote")
+```
+
+
+```{r setup, include=FALSE}
+L
+```
+
+
+```{r setup, include=FALSE}
+L$Age
+```
+
+
+```{r setup, include=FALSE}
+h_B = list("Bhavna", 95)
+```
+
+
+```{r setup, include=FALSE}
+h_S = list("Sonakshi", 90)
+```
+
+
+```{r setup, include=FALSE}
+h_A = list("Aron", 91)
+```
+
+
+```{r setup, include=FALSE}
+highest.score
+```
+
+
+```{r setup, include=FALSE} 
+L = list(rno = 1, name = "Riya", marks = 89.5, course = "Btech")
+```
+
+
+
+```{r setup, include=FALSE}
+L
+```
+
+
+```{r setup, include=FALSE}
+L$rno = NULL
+```
+
+
+```{r setup, include=FALSE}
+L
+```
+
+
+```{r setup, include=FALSE}
+L["rno"] = NULL
+```
+
+
+```{r setup, include=FALSE}
+L
+```
+
+
+```{r setup, include=FALSE}
+```
+
+
+```{r setup, include=FALSE}
+```
+
+
+```{r setup, include=FALSE}
+highest.score = list(h_B,h_S,h_A)
+```
+
+
+```{r setup, include=FALSE}
+paste("Hello", "World")
+
+```
+
